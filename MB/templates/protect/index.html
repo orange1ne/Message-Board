@@ -1,0 +1,10 @@
+{% extends 'default.html' %}
+
+{% block content %}
+{% if is_not_subs %}
+<button> <a href="sign/subscribe/">Подписаться на новости</a> </button>
+{% endif %}
+<h2>Личная страница пользователя {{request.user.username}}</h2>
+
+<button> <a href="sign/logout/">Выйти</a> </button>
+{% endblock %}
